@@ -11,6 +11,31 @@ Example:
 N = 529 → binary 1000010001 → longest gap = 4
         */
 
-
+        public int BinaryGapFunc(int N)
+        {
+            var binary = Convert.ToString(N, 2);
+            int count = 0;
+            int maxCount = 0;
+            bool counting = false;
+            foreach (var item in binary)
+            {
+                if (item=='1')
+                {
+                    if (counting==false)
+                    {
+                        counting = true;
+                    }
+                    maxCount=Math.Max(maxCount, count);
+                    count= 0;
+                }
+                else if (item == '0' && counting == true)
+                {
+                    //the last 0, did not calculate maxcount
+                    count++;
+                }
+               
+            }
+            return maxCount;
+        }
     }
 }

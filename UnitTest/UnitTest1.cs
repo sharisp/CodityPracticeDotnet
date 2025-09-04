@@ -4,8 +4,12 @@ namespace UnitTest
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestBinaryGap()
         {
+            Codity.BinaryGap bg = new Codity.BinaryGap();
+            Assert.AreEqual(4, bg.BinaryGapFunc(529));
+            Assert.AreEqual(1, bg.BinaryGapFunc(20));
+           
         }
     }
 }

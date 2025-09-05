@@ -18,6 +18,7 @@ namespace Codity
         */
         public int[] CyclicRotationFunc(int[] A, int K)
         {
+            if (A.Length == 0) return A; // Handle empty array case
             int[] arr = new int[A.Length];
             int rotations = K % A.Length; // Handle cases where K is greater than the length of A
 

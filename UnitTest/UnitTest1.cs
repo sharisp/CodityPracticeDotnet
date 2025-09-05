@@ -27,6 +27,13 @@ namespace UnitTest
             var get2 = cy.CyclicRotationFunc(A2, 5);
             CollectionAssert.AreEqual(A2, get2);
 
+            int[] A3 = { 3, 8, 9, 7, 6 };
+            int K3 = 8;
+            int[] expected3 = { 9, 7, 6, 3, 8 };
+            var get3 = cy.CyclicRotationFunc(A3, K3);
+
+            CollectionAssert.AreEqual(expected3, get3);
+
         }
     }
 }

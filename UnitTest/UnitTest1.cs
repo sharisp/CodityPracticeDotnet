@@ -11,5 +11,18 @@ namespace UnitTest
             Assert.AreEqual(1, bg.BinaryGapFunc(20));
            
         }
+
+        [TestMethod]
+        public void TestCycliRotation()
+        {
+            var cy = new Codity.CyclicRotation();
+            int[] A1 = { 3, 8, 9, 7, 6 };
+            int K1 = 3;
+            int[] expected1 = { 9, 7, 6, 3, 8 };
+            var get = cy.CyclicRotationFunc(A1, K1);
+       
+            CollectionAssert.AreEqual(expected1, get);
+
+        }
     }
 }

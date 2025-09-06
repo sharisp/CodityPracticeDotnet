@@ -41,5 +41,17 @@ namespace Codity
             }
             return -1; // Return -1 if no odd occurrence is found
         }
+
+        public int OddOccurrencesInArrayXOR(int[] A)
+        {
+            int result = 0;
+
+            foreach (var item in A)
+            {
+                result= result ^ item; // XOR operation
+            }
+          
+            return result; // Return -1 if no odd occurrence is found
+        }
     }
 }

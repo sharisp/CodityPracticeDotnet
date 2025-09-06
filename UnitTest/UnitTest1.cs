@@ -47,5 +47,16 @@ namespace UnitTest
             int[] A2 = { 9, 3, 9, 3, 9, 7, 9, 9, 9, 9, 7 };
             Assert.AreEqual(9, oddOccurrences.OddOccurrencesInArrayByDictionary(A2));
         }
+
+        [TestMethod]
+        public void TestOddOccurrencesInArrayByXOR()
+        {
+            var oddOccurrences = new Codity.OddOccurrencesInArray();
+            int[] A1 = { 9, 3, 9, 3, 9, 7, 9 };
+            Assert.AreEqual(7, oddOccurrences.OddOccurrencesInArrayXOR(A1));
+
+            int[] A2 = { 9, 3, 9, 3, 9, 7, 9, 9, 9, 9, 7 };
+            Assert.AreEqual(9, oddOccurrences.OddOccurrencesInArrayXOR(A2));
+        }
     }
 }

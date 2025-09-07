@@ -66,6 +66,8 @@ namespace UnitTest
             Assert.AreEqual(3, jmp.FrogJmpFunc(10, 85, 30));
 
             Assert.AreEqual(3, jmp.FrogJmpFunc(85, 10, 30));
+
+            Assert.AreEqual(3, jmp.FrogJmpFunc(100, 10, 30));
         }
     }
 }

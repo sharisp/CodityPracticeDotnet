@@ -58,5 +58,14 @@ namespace UnitTest
             int[] A2 = { 9, 3, 9, 3, 9, 7, 9, 9, 9, 9, 7 };
             Assert.AreEqual(9, oddOccurrences.OddOccurrencesInArrayXOR(A2));
         }
+
+        [TestMethod]
+        public void TestFrogJmpFunc()
+        {
+            var jmp = new Codity.FrogJmp();
+            Assert.AreEqual(3, jmp.FrogJmpFunc(10, 85, 30));
+
+            Assert.AreEqual(3, jmp.FrogJmpFunc(85, 10, 30));
+        }
     }
 }

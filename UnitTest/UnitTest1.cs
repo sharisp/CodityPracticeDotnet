@@ -82,5 +82,13 @@ namespace UnitTest
 
             Assert.AreEqual(-1, jmp.MathCeilFunc(-1.1f));
         }
+        [TestMethod]
+        public void TestPermMissingElemFunc()
+        {
+            var permMissingElem = new Codity.PermMissingElem();
+
+            int[] A1 = { 2, 3, 1, 5 };
+            Assert.AreEqual(4, permMissingElem.PermMissingElemFunc(A1));
+        }
     }
 }

@@ -76,6 +76,8 @@ namespace UnitTest
 
             Assert.AreEqual(2, jmp.MathCeilFunc(1.1f));
 
+            Assert.AreEqual(1, jmp.MathCeilFunc(1f));
+
 
         }
     }

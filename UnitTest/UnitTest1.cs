@@ -69,5 +69,14 @@ namespace UnitTest
 
             Assert.AreEqual(3, jmp.FrogJmpFunc(100, 10, 30));
         }
+        [TestMethod]
+        public void TestMathCeiling()
+        {
+            var jmp = new Codity.FrogJmp();
+
+            Assert.AreEqual(2, jmp.MathCeilFunc(1.1f));
+
+
+        }
     }
 }

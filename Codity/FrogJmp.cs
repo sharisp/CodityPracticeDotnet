@@ -19,5 +19,14 @@ namespace Codity
             float jumps = distance / (float)D;
             return (int)Math.Ceiling(jumps);
         }
+        public int MathCeilFunc(float num)
+        {
+            int newNum = (int)num;
+            if (num > newNum)
+            {
+                return newNum + 1;
+            }
+            return newNum;
+        }
     }
 }

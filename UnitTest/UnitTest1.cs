@@ -78,7 +78,9 @@ namespace UnitTest
 
             Assert.AreEqual(1, jmp.MathCeilFunc(1f));
 
+            Assert.AreEqual(-1, Math.Ceiling(-1.1f));
 
+            Assert.AreEqual(-1, jmp.MathCeilFunc(-1.1f));
         }
     }
 }

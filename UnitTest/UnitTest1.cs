@@ -92,7 +92,7 @@ namespace UnitTest
 
 
             int[] A2 = { 2, 3, 1, 5,6 };
-            Assert.AreEqual(4, permMissingElem.PermMissingElemFunc(A1));
+            Assert.AreEqual(4, permMissingElem.PermMissingElemFunc(A2));
         }
     }
 }

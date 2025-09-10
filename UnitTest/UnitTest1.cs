@@ -106,6 +106,10 @@ namespace UnitTest
 
             int[] A2 = { 2, 3, 1, 5, 6 };
             Assert.AreEqual(4, permMissingElem.PermMissingElemDict(A2));
+
+
+            int[] A3 = { 2, 3, 1, 5, 4 ,6,8};
+            Assert.AreEqual(7, permMissingElem.PermMissingElemDict(A3));
         }
     }
 }

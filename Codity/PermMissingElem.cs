@@ -27,5 +27,25 @@ namespace Codity
             result = expectedSum - actualSum; // The missing element
             return result;
         }
+
+        public int PermMissingElemDict(int[] A)
+        {
+            int result = 0;
+            int n = A.Length + 1; // Since one element is missing, the length of A is N, so we consider N + 1
+            var dict = new Dictionary<int, bool>();
+            foreach (var num in A)
+            {
+                dict[num] = true;
+            }
+            for (int i = 1; i <= n; i++)
+            {
+                if (!dict.ContainsKey(i))
+                {
+                    result = i;
+                    break;
+                }
+            }
+            return result;
+        }
     }
 }

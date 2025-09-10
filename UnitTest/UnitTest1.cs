@@ -94,5 +94,18 @@ namespace UnitTest
             int[] A2 = { 2, 3, 1, 5,6 };
             Assert.AreEqual(4, permMissingElem.PermMissingElemFunc(A2));
         }
+
+        [TestMethod]
+        public void TestPermMissingElemDictFunc()
+        {
+            var permMissingElem = new Codity.PermMissingElem();
+
+            int[] A1 = { 2, 3, 1, 5 };
+            Assert.AreEqual(4, permMissingElem.PermMissingElemDict(A1));
+
+
+            int[] A2 = { 2, 3, 1, 5, 6 };
+            Assert.AreEqual(4, permMissingElem.PermMissingElemDict(A2));
+        }
     }
 }

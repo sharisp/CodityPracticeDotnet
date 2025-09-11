@@ -118,7 +118,12 @@ namespace UnitTest
             var tapeEquilibrium = new Codity.TapeEquilibrium();
 
             int[] A1 = { 3, 1, 2, 4, 3 };
-            Assert.AreEqual(1, tapeEquilibrium.TapeEquilibriumFunc(A1));          
+            Assert.AreEqual(1, tapeEquilibrium.TapeEquilibriumFunc(A1));
+           
+            int[] A2 = { -1000, 1000 };
+            Assert.AreEqual(2000, tapeEquilibrium.TapeEquilibriumFunc(A2));
+            int[] A3 = { -10, -20, -30, -40, 100 };
+            Assert.AreEqual(20, tapeEquilibrium.TapeEquilibriumFunc(A3));
 
         }
     }

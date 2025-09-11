@@ -111,5 +111,15 @@ namespace UnitTest
             int[] A3 = { 2, 3, 1, 5, 4 ,6,8};
             Assert.AreEqual(7, permMissingElem.PermMissingElemDict(A3));
         }
+
+        [TestMethod]
+        public void TestTapeEquilibriumFunc()
+        {
+            var tapeEquilibrium = new Codity.TapeEquilibrium();
+
+            int[] A1 = { 3, 1, 2, 4, 3 };
+            Assert.AreEqual(1, tapeEquilibrium.TapeEquilibriumFunc(A1));          
+
+        }
     }
 }

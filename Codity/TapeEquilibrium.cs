@@ -23,7 +23,8 @@ Solution (C#):*/
             int allSum = A.Sum();
             int minDiff = int.MaxValue;
 
-            for (int i = 0; i < A.Length; i++)
+            //should stop at A.Length-1 to ensure both parts are non-empty
+            for (int i = 0; i < A.Length-1; i++)
             {
                 leftSum = leftSum + A[i];
                 rightSum = allSum - leftSum;

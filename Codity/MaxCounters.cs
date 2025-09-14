@@ -23,3 +23,4 @@ namespace Codity
             return A;
         }
     }
+}

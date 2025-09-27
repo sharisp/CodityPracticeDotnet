@@ -91,7 +91,7 @@ namespace UnitTest
             Assert.AreEqual(4, permMissingElem.PermMissingElemFunc(A1));
 
 
-            int[] A2 = { 2, 3, 1, 5,6 };
+            int[] A2 = { 2, 3, 1, 5, 6 };
             Assert.AreEqual(4, permMissingElem.PermMissingElemFunc(A2));
         }
 
@@ -108,7 +108,7 @@ namespace UnitTest
             Assert.AreEqual(4, permMissingElem.PermMissingElemDict(A2));
 
 
-            int[] A3 = { 2, 3, 1, 5, 4 ,6,8};
+            int[] A3 = { 2, 3, 1, 5, 4, 6, 8 };
             Assert.AreEqual(7, permMissingElem.PermMissingElemDict(A3));
         }
 
@@ -119,7 +119,7 @@ namespace UnitTest
 
             int[] A1 = { 3, 1, 2, 4, 3 };
             Assert.AreEqual(1, tapeEquilibrium.TapeEquilibriumFunc(A1));
-           
+
             int[] A2 = { -1000, 1000 };
             Assert.AreEqual(2000, tapeEquilibrium.TapeEquilibriumFunc(A2));
             int[] A3 = { -10, -20, -30, -40, 100 };
